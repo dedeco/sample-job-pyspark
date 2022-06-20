@@ -4,7 +4,6 @@ from faker import Factory
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 
-import angelou.sparksession as S
 import angelou.transformations as T
 
 faker = Factory.create()
@@ -15,7 +14,7 @@ def fake_name():
 
 
 def fake_int():
-    return faker.pyint()
+    return faker.pyint(0, 50)
 
 
 if __name__ == "__main__":
