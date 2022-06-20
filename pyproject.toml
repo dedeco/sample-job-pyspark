@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "angelou"
+version = "0.1.0"
+description = ""
+authors = ["Andre Araujo <dedeco@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyspark = "^3.3.0"
+quinn = "^0.9.0"
+Faker = "^13.13.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
